@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Story — Trueloomery</title>
+<meta name="description" content="Trueloomery is a source-factory cotton outerwear house. Learn about our craftsmanship, our looms, and where we're headed next.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600&family=Space+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html">TRUELOOMERY</a>
+    <ul>
+      <li><a class="active" href="about.html">Our Story</a></li>
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="index.html#process">Craftsmanship</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a class="cta" href="contact.html">Request a Quote</a>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="wrap">
+    <div class="eyebrow">Our story</div>
+    <h1 class="display">Built at the loom, not around it.</h1>
+    <p>Trueloomery grew out of a cotton and padded-outerwear factory — not a design studio looking for a factory to work with. That order matters, and it shapes everything we make.</p>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap story-grid">
+    <div class="story-visual" data-reveal></div>
+    <div class="story-text" data-reveal>
+      <p class="lead">We are Trueloomery — a cotton outerwear house built on real craftsmanship, not middlemen.</p>
+      <p>Every jacket starts at our own looms, where quality is controlled from yarn to finished garment. Comfort isn't an afterthought here; it's woven into every stitch.</p>
+      <p>For years, we manufactured for other people's labels. Trueloomery is what happens when we put our own name on the work — the same factory, the same standards, but with a point of view.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div>
+        <span class="tag">What we stand for</span>
+        <h2>Three things we don't compromise on.</h2>
+      </div>
+      <p>Everything else is negotiable. These aren't.</p>
+    </div>
+    <div class="values" data-reveal>
+      <div class="value">
+        <h4>Source, not sourcing</h4>
+        <p>We manufacture in our own facility. When you order from Trueloomery, you're one step from the loom, not three steps from a trading company.</p>
+      </div>
+      <div class="value">
+        <h4>Comfort as a spec</h4>
+        <p>Hand-feel, weight, and warmth are treated as measurable requirements in every tech pack — not a marketing adjective added afterward.</p>
+      </div>
+      <div class="value">
+        <h4>Built to grow with you</h4>
+        <p>Tiered MOQs mean a new brand and an established one can both start a program with us, and scale it as their business grows.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="process">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div>
+        <span class="tag">Where we're headed</span>
+        <h2>From outerwear to everyday comfort.</h2>
+      </div>
+      <p>Our roadmap, in three stages.</p>
+    </div>
+    <div class="timeline" data-reveal>
+      <div class="timeline-item">
+        <div class="year">Now</div>
+        <div>
+          <h4>Cotton outerwear</h4>
+          <p>Jackets, coats, and padded outerwear for European and North American buyers, with original seasonal concepts and standardized tech packs.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="year">Next</div>
+        <div>
+          <h4>Certifications</h4>
+          <p>OEKO-TEX Standard 100 as our first priority, giving buyers a clear, verifiable quality benchmark.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="year">Ahead</div>
+        <div>
+          <h4>Home textiles</h4>
+          <p>Comfort footwear and home essentials, extending the same craftsmanship and comfort standard beyond outerwear.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="rfq">
+  <div class="wrap">
+    <span class="section-head tag" style="justify-content:center; display:flex;">Let's talk</span>
+    <h2 data-reveal>Come see what <em>woven true</em> means for your line.</h2>
+    <p data-reveal>Tell us about your outerwear program and we'll get back to you within two business days.</p>
+    <a class="btn primary" href="contact.html">Request a Quote</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <div class="logo">TRUELOOMERY</div>
+      <div class="tagline">Comfort, Woven True.</div>
+    </div>
+    <div class="footer-links">
+      <a href="collections.html">Collections</a>
+      <a href="about.html">Our Story</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const els = document.querySelectorAll('[data-reveal]');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold:0.15 });
+  els.forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>
